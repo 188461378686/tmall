@@ -43,7 +43,7 @@ function change(findex){
  });
 /*floor-tabs end*/
 /*one-'grid-price strat*/
-$.getJSON("../public/data/object.json",function(data){
+$.get("./public/data/object.json",function(data){
     var dataList=data.objectData;
     var content=""
    for(var i=0;i<dataList.length;i++){
@@ -68,7 +68,6 @@ window.onscroll=function(){
         $('.taggle-nav').stop(true,false).animate({
             top:-50
         },300,'swing')
-         console.log(222)
     }
 
 
